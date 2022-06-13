@@ -1,6 +1,6 @@
 {
   "name": "tubeyou-components",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "React components",
   "main": "src/index.js",
   "author": "Wholesome Ghoul <wholesome.ghoul@gmail.com>",
@@ -10,7 +10,9 @@
     "generate:icons": "npx @svgr/cli ./src/svgs",
     "create-component": "./scripts/create-component.sh",
     "test:cypress": "yarn cypress run-ct",
-    "test:cypress:open": "yarn cypress open-ct"
+    "test:cypress:open": "yarn cypress open-ct",
+    "build": "tsc",
+    "publish:npm": "yarn build && yarn publish"
   },
   "dependencies": {
     "@svgr/cli": "^6.2.1",
@@ -58,5 +60,8 @@
         }
       }
     ]
-  }
+  },
+  "files": [
+    "dist/**/*"
+  ]
 }
