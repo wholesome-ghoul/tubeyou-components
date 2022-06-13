@@ -8,10 +8,11 @@
   "license": "MIT",
   "scripts": {
     "prepare": "husky install",
-    "release": "standard-version",
-    "release:minor": "standard-version --release-as minor",
-    "release:patch": "standard-version --release-as patch",
-    "release:major": "standard-version --release-as major",
+    "push-tags": "git push --follow-tags",
+    "release": "standard-version && yarn push-tags",
+    "release:minor": "standard-version --release-as minor && yarn push-tags",
+    "release:patch": "standard-version --release-as patch && yarn push-tags",
+    "release:major": "standard-version --release-as major && yarn push-tags",
     "generate:icons": "npx @svgr/cli ./src/svgs",
     "create-component": "./scripts/create-component.sh",
     "test:cypress": "yarn cypress run-ct",
@@ -19,7 +20,7 @@
     "build": "tsc",
     "copy-files": "copyfiles -u 1 src/**/*.scss dist/",
     "publish:npm": "yarn build && yarn copy-files && yarn publish",
-    "publish-and-release": "yarn publish:npm && release"
+    "publish-and-release": "yarn publish:npm && yarn release"
   },
   "dependencies": {
     "@commitlint/cli": "^17.0.2",
