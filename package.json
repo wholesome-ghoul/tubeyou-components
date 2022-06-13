@@ -1,6 +1,6 @@
 {
   "name": "tubeyou-components",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "React components",
   "main": "dist/index.js",
   "author": "Wholesome Ghoul <wholesome.ghoul@gmail.com>",
