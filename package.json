@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "description": "React components",
   "main": "index.js",
+  "author": "Wholesome Ghoul <wholesome.ghoul@gmail.com>",
   "repository": "git@github.com-wholesome:wholesome-ghoul/tubeyou-components.git",
   "license": "MIT",
-  "private": true,
   "scripts": {
     "generate:icons": "npx @svgr/cli ./src/svgs",
     "create-component": "./scripts/create-component.sh"
