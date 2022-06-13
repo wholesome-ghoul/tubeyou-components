@@ -1,6 +1,6 @@
 import React from "react";
 
-import { themes } from "../../constants";
+import { themes } from "../constants";
 import { useLocalStorage, usePrefersDarkMode } from "./";
 
 const useDarkMode = (
