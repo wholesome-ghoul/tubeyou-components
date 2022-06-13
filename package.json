@@ -20,7 +20,7 @@
     "build": "tsc",
     "copy-files": "copyfiles -u 1 src/**/*.scss dist/",
     "publish:npm": "yarn build && yarn copy-files && yarn publish",
-    "publish-and-release": "yarn release && yarn publish:npm"
+    "deploy": "yarn release && yarn publish:npm"
   },
   "dependencies": {
     "@commitlint/cli": "^17.0.2",
