@@ -7,15 +7,23 @@
   "repository": "git@github.com-wholesome:wholesome-ghoul/tubeyou-components.git",
   "license": "MIT",
   "scripts": {
+    "prepare": "husky install",
+    "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch",
+    "release:major": "standard-version --release-as major",
     "generate:icons": "npx @svgr/cli ./src/svgs",
     "create-component": "./scripts/create-component.sh",
     "test:cypress": "yarn cypress run-ct",
     "test:cypress:open": "yarn cypress open-ct",
     "build": "tsc",
     "copy-files": "copyfiles -u 1 src/**/*.scss dist/",
-    "publish:npm": "yarn build && yarn copy-files && yarn publish"
+    "publish:npm": "yarn build && yarn copy-files && yarn publish",
+    "publish-and-release": "yarn publish:npm && release"
   },
   "dependencies": {
+    "@commitlint/cli": "^17.0.2",
+    "@commitlint/config-conventional": "^17.0.2",
     "@svgr/cli": "^6.2.1",
     "@svgr/plugin-jsx": "^6.2.1",
     "@testing-library/jest-dom": "^5.14.1",
@@ -44,7 +52,9 @@
     "@cypress/react": "^5.12.4",
     "@cypress/webpack-dev-server": "^1.8.2",
     "copyfiles": "^2.4.1",
+    "husky": "^8.0.0",
     "node-sass": "^7.0.1",
+    "standard-version": "^9.5.0",
     "webpack": "^5.70.0"
   },
   "eslintConfig": {
