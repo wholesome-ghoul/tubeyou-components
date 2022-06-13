@@ -1,7 +1,7 @@
 import { Button } from "../";
-import { themes } from "../../constants";
-import { ThemeContext } from "../../context";
-import { SunIcon, MoonIcon } from "../../components/icons";
+import { themes } from "../constants";
+import { ThemeContext } from "../context";
+import { SunIcon, MoonIcon } from "../icons";
 import { IconSize } from "../utils";
 import Props from "./types";
 

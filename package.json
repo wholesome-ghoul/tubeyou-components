@@ -2,7 +2,7 @@
   "name": "tubeyou-components",
   "version": "0.0.3",
   "description": "React components",
-  "main": "index.js",
+  "main": "src/index.js",
   "author": "Wholesome Ghoul <wholesome.ghoul@gmail.com>",
   "repository": "git@github.com-wholesome:wholesome-ghoul/tubeyou-components.git",
   "license": "MIT",
