@@ -12,6 +12,23 @@
   },
   "dependencies": {
     "@svgr/cli": "^6.2.1",
-    "@svgr/plugin-jsx": "^6.2.1"
+    "@svgr/plugin-jsx": "^6.2.1",
+    "eslint-plugin-jsx-a11y": "^6.5.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
   }
 }
