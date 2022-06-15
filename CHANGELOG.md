@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.16](https://github.com/wholesome-ghoul/tubeyou-components/compare/v0.0.15...v0.0.16) (2022-06-15)
+
+
+### Features
+
+* add storybook ([58475ab](https://github.com/wholesome-ghoul/tubeyou-components/commits/58475ab09386befc41a82fd401e0a9f3ee66fa0a))
+
 ### [0.0.15](https://github.com/wholesome-ghoul/tubeyou-components/compare/v0.0.14...v0.0.15) (2022-06-14)
 
 ### [0.0.14](https://github.com/wholesome-ghoul/tubeyou-components/compare/v0.0.13...v0.0.14) (2022-06-13)
