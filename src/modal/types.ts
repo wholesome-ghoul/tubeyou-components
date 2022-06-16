@@ -6,7 +6,6 @@ type Props = BaseProps & {
   children?: React.ReactNode;
   size?: Size;
   visible: boolean;
-  setVisible: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
 export default Props;
