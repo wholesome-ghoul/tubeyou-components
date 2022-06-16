@@ -1,0 +1,45 @@
+import { Meta, Story } from "@storybook/addon-docs";
+
+import Sidebar from "./Sidebar";
+import Button from "../button";
+import { MoonIcon } from "../icons";
+
+<Meta title="Sidebar" component={Sidebar} />
+
+export const Template = (args) => <Sidebar {...args} />;
+
+# Sidebar
+
+<Story
+  name="Default"
+  args={{
+    options: [
+      {
+        icon: (
+          <Button
+            icon={<MoonIcon />}
+            onClick={() => console.log("moon icon clicked")}
+          />
+        ),
+      },
+      {
+        icon: (
+          <Button
+            icon={<MoonIcon />}
+            onClick={() => console.log("moon icon clicked")}
+          />
+        ),
+      },
+      {
+        icon: (
+          <Button
+            icon={<MoonIcon />}
+            onClick={() => console.log("moon icon clicked")}
+          />
+        ),
+      },
+    ],
+  }}
+>
+  {Template.bind({})}
+</Story>

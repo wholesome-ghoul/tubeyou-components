@@ -8,3 +8,4 @@ export { default as ThemeToggler } from "./theme-toggler";
 export { default as Iframe } from "./iframe";
 export { default as Header } from "./header";
 export { default as TextField } from "./textField";
+export { default as Sidebar } from "./sidebar";
