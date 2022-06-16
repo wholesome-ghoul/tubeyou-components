@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/wholesome-ghoul/tubeyou-components/compare/v0.1.2...v0.2.0) (2022-06-16)
+
+
+### Features
+
+* implement modal ([b5d134d](https://github.com/wholesome-ghoul/tubeyou-components/commits/b5d134dd447c68f1216c004d5e5b6537769249b7))
+* make sidebar fixed ([1698926](https://github.com/wholesome-ghoul/tubeyou-components/commits/1698926f4f9946efafb5963275fcd2d7c102557f))
+
 ### [0.1.2](https://github.com/wholesome-ghoul/tubeyou-components/compare/v0.1.1...v0.1.2) (2022-06-16)
 
 ### [0.1.1](https://github.com/wholesome-ghoul/tubeyou-components/compare/v0.1.0...v0.1.1) (2022-06-16)
