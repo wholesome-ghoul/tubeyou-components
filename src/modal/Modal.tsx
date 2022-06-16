@@ -4,7 +4,6 @@ import cx from "classnames";
 import Props from "./types";
 import styles from "./style.module.scss";
 import StyledModal from "./StyledModal";
-import { capitalize } from "../utils";
 
 const Modal = ({ children, size, gridPosition, visible, className }: Props) => {
   const styledProps = { ...gridPosition };
@@ -14,11 +13,7 @@ const Modal = ({ children, size, gridPosition, visible, className }: Props) => {
     <div className={cx(styles.modalWrapper, { [styles.visible]: !visible })}>
       <StyledModal
         ref={modalRef}
-        className={cx(
-          styles.modal,
-          styles[`modal${capitalize(size)}`],
-          className
-        )}
+        className={cx(styles.modal, styles[`${size}Modal`], className)}
         {...styledProps}
       >
         {children}
