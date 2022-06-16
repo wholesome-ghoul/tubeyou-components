@@ -4,8 +4,8 @@ type Grid = {
 };
 
 type GridPos = {
-  rowPos?: string;
-  colPos?: string;
+  rowPos?: string | number;
+  colPos?: string | number;
 };
 
 type Size = "small" | "medium" | "large" | "xlarge" | "fill";

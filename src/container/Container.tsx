@@ -10,10 +10,10 @@ const cellCreator = (n: number | string) => `repeat(${n}, minmax(0, 1fr))`;
 const defaultRows = cellCreator(12);
 const defaultCols = cellCreator(12);
 
-const Container = ({ children, className, grid, ...rest }: Props) => {
+const Container = ({ children, className, grid, gridPosition, noGrid, ...rest }: Props) => {
   let _grid: Grid = {};
 
-  if (grid) {
+  if (!noGrid && grid) {
     if (grid.constructor === String) {
       [_grid.cols, _grid.rows] = grid.split("x").map(cellCreator); // 4x5
     } else {
@@ -29,7 +29,7 @@ const Container = ({ children, className, grid, ...rest }: Props) => {
     }
   }
 
-  const styledProps = { ..._grid };
+  const styledProps = { ..._grid, ...gridPosition, noGrid };
 
   return (
     <StyledContainer
@@ -47,6 +47,7 @@ Container.defaultProps = {
     rows: defaultRows,
     cols: defaultCols,
   },
+  noGrid: false
 };
 
 export default Container;
