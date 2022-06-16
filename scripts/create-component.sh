@@ -92,6 +92,21 @@ export default $STYLED_COMPONENT;
 
 echo "export { default } from \"./$CAPITALIZED_COMPONENT_NAME\";" > index.ts
 
+echo "import { Meta, Story } from \"@storybook/addon-docs\";
+
+import $CAPITALIZED_COMPONENT_NAME from \"./$CAPITALIZED_COMPONENT_NAME\";
+
+<Meta title=\"$CAPITALIZED_COMPONENT_NAME\" component={$CAPITALIZED_COMPONENT_NAME} />
+
+export const Template = (args) => <$CAPITALIZED_COMPONENT_NAME {...args} />;
+
+# $CAPITALIZED_COMPONENT_NAME
+
+<Story name=\"Default\" args={{}}>
+  {Template.bind({})}
+</Story>
+" > $STORY
+
 cd ..
 ALL_COMPONENTS_INDEX=index.ts
 echo "export { default as $CAPITALIZED_COMPONENT_NAME } from \"./$COMPONENT_NAME\";" >> $ALL_COMPONENTS_INDEX
