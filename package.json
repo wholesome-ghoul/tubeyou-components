@@ -20,6 +20,7 @@
     "test:cypress": "yarn cypress run-ct",
     "test:cypress:open": "yarn cypress open-ct",
     "build": "tsc --build --verbose",
+    "build:watch": "tsc --build --watch --verbose",
     "copy-files": "copyfiles -u 1 src/**/*.scss dist/",
     "publish:npm": "yarn build && yarn copy-files && yarn publish",
     "deploy": "yarn release && yarn publish:npm"

@@ -1,4 +1,4 @@
-import cx from 'classnames';
+import cx from "classnames";
 
 import Props from "./types";
 import styles from "./style.module.scss";
@@ -12,12 +12,10 @@ const Sidebar = ({ options, gridPosition, className }: Props) => {
 
   return (
     <StyledSidebar className={cx(styles.sidebar, className)} {...styledProps}>
-      <Container grid="1x2">
-      <Container grid={`1x${optionsLen}`} className={styles.ul}>
+      <Container grid={`1x${optionsLen * 3}`} className={styles.ul}>
         {options.map(({ icon, text }, index) => (
           <li key={text ?? index}>{icon}</li>
         ))}
-      </Container>
       </Container>
     </StyledSidebar>
   );

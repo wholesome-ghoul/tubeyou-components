@@ -1,6 +1,9 @@
 .sidebar {
-  position: fixed;
+  position: stick;
   height: 100vh;
+  top: 0;
+  justify-self: start;
+  align-self: start;
 }
 
 .ul {
