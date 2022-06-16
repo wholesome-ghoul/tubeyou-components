@@ -19,7 +19,7 @@
     "create-component": "./scripts/create-component.sh",
     "test:cypress": "yarn cypress run-ct",
     "test:cypress:open": "yarn cypress open-ct",
-    "build": "tsc",
+    "build": "tsc --build --verbose",
     "copy-files": "copyfiles -u 1 src/**/*.scss dist/",
     "publish:npm": "yarn build && yarn copy-files && yarn publish",
     "deploy": "yarn release && yarn publish:npm"
