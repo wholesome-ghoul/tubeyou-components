@@ -7,6 +7,7 @@ type Props = BaseProps & {
   icon?: React.ReactNode;
   transparent?: boolean;
   disabled?: boolean;
+  active?: boolean;
 };
 
 export default Props;

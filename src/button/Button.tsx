@@ -12,6 +12,7 @@ const Button = ({
   icon,
   transparent,
   disabled,
+  active,
   className,
 }: Props) => {
   const styledProps = { ...gridPosition };
@@ -22,7 +23,11 @@ const Button = ({
         className={cx(
           styles.button,
           styles.icon,
-          { [styles.transparent]: transparent, [styles.disabled]: disabled },
+          {
+            [styles.transparent]: transparent,
+            [styles.disabled]: disabled,
+            [styles.active]: active,
+          },
           className
         )}
         onClick={onClick}
@@ -41,6 +46,7 @@ const Button = ({
         {
           [styles.transparent]: transparent,
           [styles.disabled]: disabled,
+          [styles.active]: active,
         },
         className
       )}
@@ -56,6 +62,7 @@ Button.defaultProps = {
   size: "small",
   transparent: false,
   disabled: false,
+  active: false,
 };
 
 export default Button;

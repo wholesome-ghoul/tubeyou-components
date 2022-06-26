@@ -1,4 +1,5 @@
 .button {
+  padding: 0.5rem;
   color: var(--fg-color);
   background-color: var(--bg-color);
   border: 0.125rem solid var(--fg-color);
@@ -12,6 +13,14 @@
     background-color: var(--fg-color);
     color: var(--bg-color);
   }
+
+  &:focus-visible {
+    outline: 2px solid var(--fg-color);
+  }
+}
+
+.active {
+  outline: 2px solid var(--fg-color);
 }
 
 .icon {
