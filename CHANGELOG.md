@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.5.0](https://github.com/wholesome-ghoul/tubeyou-components/compare/v0.4.0...v0.5.0) (2022-06-26)
+
+
+### Features
+
+* add active state ([d62bdb5](https://github.com/wholesome-ghoul/tubeyou-components/commits/d62bdb5f82bffe93843575a2ca4a7b89ac0211a2))
+
 ## [0.4.0](https://github.com/wholesome-ghoul/tubeyou-components/compare/v0.3.1...v0.4.0) (2022-06-16)
 
 
