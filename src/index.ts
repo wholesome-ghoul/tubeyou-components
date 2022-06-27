@@ -10,3 +10,4 @@ export { default as Header } from "./header";
 export { default as TextField } from "./textField";
 export { default as Sidebar } from "./sidebar";
 export { default as Modal } from "./modal";
+export { default as Switch } from "./switch";
