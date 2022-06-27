@@ -1,6 +1,6 @@
 import React from "react";
 
-const useLocalStorage = (key: string, initialValue: string) => {
+const useLocalStorage = (key: string, initialValue: string | boolean) => {
   const [state, setState] = React.useState(() => {
     try {
       const value = window.localStorage.getItem(key);
