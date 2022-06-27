@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.6.0](https://github.com/wholesome-ghoul/tubeyou-components/compare/v0.5.0...v0.6.0) (2022-06-27)
+
+
+### Features
+
+* implement switch component ([ecd53d9](https://github.com/wholesome-ghoul/tubeyou-components/commits/ecd53d924918e5145865a80606794987d20d0115))
+
 ## [0.5.0](https://github.com/wholesome-ghoul/tubeyou-components/compare/v0.4.0...v0.5.0) (2022-06-26)
 
 
