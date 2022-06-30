@@ -25,10 +25,11 @@
 
 .icon {
   border: none;
+  color: var(--fg-color);
 
   &:hover {
     background-color: var(--bg-color);
-    color: var(--fg-color);
+    color: var(--fg-hover-color);
   }
 }
 
