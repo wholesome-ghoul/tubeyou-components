@@ -1,5 +1,5 @@
 {
-  "name": "tubeyou-components",
+  "name": "@tubeu/components",
   "version": "0.6.2",
   "description": "React components",
   "main": "dist/index.js",
