@@ -1,6 +1,6 @@
 {
   "name": "@tubeu/components",
-  "version": "0.6.2",
+  "version": "1.0.0",
   "description": "React components",
   "main": "dist/index.js",
   "author": "Wholesome Ghoul <wholesome.ghoul@gmail.com>",
