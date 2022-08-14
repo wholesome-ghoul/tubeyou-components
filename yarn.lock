@@ -1474,10 +1474,10 @@
   dependencies:
     typescript "^4.7.4"
 
-"@tubeu/configs-webpack@^0.1.17":
-  version "0.1.17"
-  resolved "https://registry.yarnpkg.com/@tubeu/configs-webpack/-/configs-webpack-0.1.17.tgz#ce2b77bfb37413dbb510481ed82e4053a23571aa"
-  integrity sha512-EHE7AYntlrEBo4iTNy/PO7qCip872zIFtTha19Lti0W/BeVpXpaPbkjvTLMYs3DKzLPaDaz4FY0wqC4+XfZI+A==
+"@tubeu/configs-webpack@^0.1.18":
+  version "0.1.18"
+  resolved "https://registry.yarnpkg.com/@tubeu/configs-webpack/-/configs-webpack-0.1.18.tgz#c9d511a5bd77003f3c81c46918bda0a8b8f6d840"
+  integrity sha512-y91MfXToLrCiXvfABVO58uPtxFgrkFHJgNCUeZ3kJ5sl5vuXksrO0WUHLAtQ64VZHE6txpFz7doJuac8gKEeUw==
   dependencies:
     "@types/webpack" "^5.28.0"
     babel-loader "^8.2.5"
