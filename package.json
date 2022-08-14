@@ -1,6 +1,6 @@
 {
   "name": "@tubeu/components",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "React components",
   "main": "dist/index.js",
   "author": "Wholesome Ghoul <wholesome.ghoul@gmail.com>",
@@ -14,7 +14,7 @@
     "release:major": "standard-version --release-as major && yarn push-tags",
     "generate:icons": "npx @svgr/cli ./src/svgs",
     "create-component": "./scripts/create-component.sh",
-    "build": "tsc --build --verbose",
+    "build": "tsc --build --verbose && yarn copy-files",
     "build:watch": "tsc --build --watch --verbose",
     "copy-files": "copyfiles -u 1 src/**/*.scss dist/",
     "publish:npm": "yarn build && yarn copy-files && npm publish",
